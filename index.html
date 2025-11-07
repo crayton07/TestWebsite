@@ -29,7 +29,7 @@
   }
   </script>
 </head>
-<body>
+<body style="zoom: 1.2;">
   <a class="skip-link" href="#main">Skip to content</a>
   <header class="navbar" id="top" role="banner">
     <div class="brand">
@@ -84,32 +84,40 @@
         </article>
         <article class="card">
           <h3>Regional Coverage</h3>
-          <p>Serving WV, VA, KY, and surrounding states.</p>
+          <p>Serving all of the Eastern Coast</p>
         </article>
       </div>
     </section>
 
-    <section id="contact" class="section fade-in contact-section">
-      <h2>Contact</h2>
-      <p>Have a load? Tell us about pickup, drop-off, and timing.</p>
-      <form id="contact-form" novalidate>
-        <div class="row">
-          <label class="sr-only" for="name">Name</label>
-          <input id="name" type="text" name="name" placeholder="Your Name" autocomplete="name" required />
-          <label class="sr-only" for="phone">Phone</label>
-          <input id="phone" type="tel" name="phone" placeholder="Phone" inputmode="tel" autocomplete="tel" required />
-        </div>
+<section id="contact" class="section fade-in contact-section">
+  <h2>Contact</h2>
+  <p style="text-align:center">Have a load? Tell us about pickup, drop-off, and timing.</p>
+
+  <div class="form-flexbox">
+    <form id="contact-form" novalidate class="contact-form">
+      <div class="form-grid">
+        <label class="sr-only" for="name">Name</label>
+        <input id="name" type="text" name="name" placeholder="Your Name" autocomplete="name" required>
+
+        <label class="sr-only" for="phone">Phone</label>
+        <input id="phone" type="tel" name="phone" placeholder="Phone" inputmode="tel" autocomplete="tel" required>
+
         <label class="sr-only" for="email">Email</label>
-        <input id="email" type="email" name="email" placeholder="Email" autocomplete="email" required />
+        <input id="email" type="email" name="email" placeholder="Email" autocomplete="email" required>
+
         <label class="sr-only" for="message">Message</label>
         <textarea id="message" name="message" placeholder="Describe the load, pickup &amp; delivery" required></textarea>
-        <div class="row">
-          <button type="submit" class="cta">Send Message</button>
-          <button type="button" class="cta-outline" id="download-quote">Download Blank Quote Form</button>
-        </div>
-        <p id="form-status" class="form-status" aria-live="polite"></p>
-      </form>
-    </section>
+      </div>
+
+      <div class="form-actions">
+        <button type="submit" class="cta">Send Message</button>
+      </div>
+
+      <p id="form-status" class="form-status" aria-live="polite"></p>
+    </form>
+  </div>
+</section>
+
   </main>
 
   <button class="call-now" aria-label="Call now"><a href="tel:13049109077">Call</a></button>
